@@ -1,0 +1,98 @@
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    position: relative;
+    left: 17px;
+    padding-left: 10px;
+}
+.content p {
+    width: 100%;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.cursor {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #0ec92d;
+    border-radius: 50px;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+}
+
+.cursor2{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .15s;
+}
+
+.content:hover ~ .cursor{
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: rgb(13, 177, 21);
+    opacity: .5;
+}
+
+.content:hover ~ .cursor2{
+    opacity: 0;
+}
+
+
+
+.slider {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    background: url(./images/green.jpg) no-repeat;
+    background-position: 0 center;
+    background-size: 100vw;
+    position: relative;
+    margin: 0;
+    
+}
+
+.slider input{
+    -webkit-appearance: none;
+    width: 100%;
+    background: none;
+    z-index: 10px;
+}
+
+.slider input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 10px;
+    height: 50vh;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.original-image{
+    position: absolute;
+    left: 0;
+    width: 20%;
+    height: 50vh;
+    background: url(./images/misty.jpg) no-repeat;
+    background-position: 0 center;
+    background-size: 100vw;
+    
+}
