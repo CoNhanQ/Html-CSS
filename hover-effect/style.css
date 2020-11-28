@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #333;
+}
+
+.container {
+    text-align: center;
+    margin-top: 150px; 
+}
+
+.img {
+    width: 240px;
+    height: 350px;
+    background: black;
+    display: inline-block;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+
+.img:hover{
+    background-position: bottom;
+}
+
+.img1 {
+    background-image: url(./images/city.jpg);
+}
+
+.img2 {
+    background-image: url(./images/coffee.jpg);
+}
+
+.img3 {
+    background-image: url(./images/cookies.jpg);
+}
+
+
+
+
