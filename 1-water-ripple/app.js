@@ -1,4 +1,4 @@
 $(".full-landing-image").ripples({
-    resolution: 500,
+    resolution: 100,
     perturbance: 0.04,
 });
