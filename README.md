@@ -3,4 +3,4 @@
 ## 1 Water ripple effect
 
 # Technology use: HTML, CSS, Jquery
-![](image-clip/water-ripple.png)
+![Getting Started](image-clip/water-ripple.png)
